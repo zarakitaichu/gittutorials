@@ -1,0 +1,55 @@
+D: would take you to that base directory
+cd.. takes you one step back in the folder structure
+cd <folder name> takes you into the folder
+
+git status - checks whether there are untracked files. Tracking whether any files are added to commit or not. It will display the files that are present but not added to commit, in red text
+if added to commit, it will showcase in green text
+
+git add <filename> adds the file to commit
+git add .  dot adds all files in that folder to commit
+
+git commit -m "<comment>" This commit makes sure that the changes are moved to the staging environment
+
+git branch : by default, it will show up "master"
+whenever we create a GitHub repository, there will be a branch called main
+
+git branch -M main : creates the main branch - master branch gets changed to main branch
+
+How is the local repository connected to main repository?
+
+git remote add origin <link> : this links the repository
+
+git remote : provides you with "origin"
+
+git remote -v
+
+
+git push <loc1> <loc2>: git push origin main : moves files from origin to main
+
+if we update the file, and then write
+
+git status : it will mention that the file is modified. If we want to get back our earlier file
+
+git restore <file name> : file restored, whatever changes you might have made post the earlier commit is gone
+
+suppose we want to modify it
+
+git status : will showcase modified file (as well as new files if added to location)
+
+git add . (adds both files to staging env)
+
+git status (green color for both files)
+
+git remote -v
+
+
+git push origin main : this adds new file and modifies the previous file as well
+
+
+
+If we create a folder and want to clone a repository:
+
+After getting into that new folder in command prompt,
+
+git clone <link> : clone happens, you would get the folder structure in the new folder location.
+
